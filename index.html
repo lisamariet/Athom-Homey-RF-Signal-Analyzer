@@ -258,7 +258,7 @@
                 }
 
                 var xhttp = new XMLHttpRequest();
-                xhttp.open("POST", 'http://' + $ipAddress.value + '/api' + url, true);
+                xhttp.open("POST", 'https://' + $ipAddress.value + '.homey.homeylocal.com/api' + url, true);
                 xhttp.setRequestHeader("Content-type", "application/json;charset=UTF-8");
                 xhttp.setRequestHeader("Authorization", "Bearer " + bearer);
                 xhttp.onreadystatechange = function (e) {
